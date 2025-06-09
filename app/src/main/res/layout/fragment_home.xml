@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <androidx.constraintlayout.widget.Guideline
+       android:layout_width="1dp"
+       android:layout_height="0dp"
+       android:orientation="horizontal"
+       app:layout_constraintGuide_percent="0.20"
+       android:id="@+id/guideTop"/>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/quiz_app"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:id="@+id/quizTV"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quizTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
 
-</FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
