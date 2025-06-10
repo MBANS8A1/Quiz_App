@@ -12,7 +12,11 @@ class QuestionFragment : Fragment() {
     private lateinit var binding: FragmentQuestionBinding
     val name: String? = null
     val score:Int = 0
-
+    val result = ResultFragment()
+    val bundle = Bundle()
+    var currentPosition:Int = 1
+    var selectedOption:Int = 0
+    var questionList: ArrayList<QuestionData>? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
