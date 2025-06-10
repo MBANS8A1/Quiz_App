@@ -6,6 +6,9 @@ plugins {
 android {
     namespace = "com.example.quizapp"
     compileSdk = 35
+    buildFeatures{
+        dataBinding=true
+    }
 
     defaultConfig {
         applicationId = "com.example.quizapp"
