@@ -1,127 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".QuestionFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:layout_width="1dp"
-        android:layout_height="0dp"
-        app:layout_constraintGuide_percent="0.20"
-        android:orientation="horizontal"
-        android:id="@+id/guideTop"/>
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideTop"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/questionTV"
-        android:textSize="16sp"
-        android:text="@string/enter_your_question"
-        android:textStyle="bold"
-        android:textColor="@color/black"/>
-    <LinearLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/questionTV"
-        android:layout_marginTop="10dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:id="@+id/linear1">
+        android:layout_height="match_parent"
+        tools:context=".QuestionFragment">
 
-        <ProgressBar
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:max="5"
-            android:padding="10dp"
-            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-            android:id="@+id/progressBar"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            app:layout_constraintGuide_percent="0.20"
+            android:orientation="horizontal"
+            android:id="@+id/guideTop" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_1_5"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:id="@+id/progressText"/>
-    </LinearLayout>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/questionTV"
+            android:textSize="16sp"
+            android:text="@string/enter_your_question"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linear1"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/option_1"
-        android:layout_marginHorizontal="20dp"
-        android:padding="5dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:background="@drawable/question_option"
-        android:id="@+id/option1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/questionTV"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/linear1">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/option1"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/option_2"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:padding="5dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:background="@drawable/question_option"
-        android:id="@+id/option2"/>
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="5"
+                android:padding="10dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:id="@+id/progressBar" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/option2"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/option_3"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:padding="5dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:background="@drawable/question_option"
-        android:id="@+id/option3"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1_5"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/progressText" />
+        </LinearLayout>
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/option3"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/option_4"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:padding="5dp"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:background="@drawable/question_option"
-        android:id="@+id/option4"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/option_1"
+            android:layout_marginHorizontal="20dp"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/question_option"
+            android:id="@+id/option1" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:backgroundTint="@color/blue"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/option4"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="17dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/submitBtn"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/option1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/option_2"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/question_option"
+            android:id="@+id/option2" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/option2"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/option_3"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/question_option"
+            android:id="@+id/option3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/option3"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/option_4"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/question_option"
+            android:id="@+id/option4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/option4"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="17dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/submitBtn" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
