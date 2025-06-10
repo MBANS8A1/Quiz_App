@@ -59,7 +59,19 @@ class QuestionFragment : Fragment() {
     }
 
     private fun optionStyle() {
-        TODO("Not yet implemented")
+        val optionList : ArrayList<TextView> = arrayListOf()
+        optionList.add(0,binding.option1)
+        optionList.add(1,binding.option2)
+        optionList.add(2,binding.option3)
+        optionList.add(3,binding.option4)
+        for(op in optionList){
+            op.setTextColor("#555151".toColorInt())
+            op.background = ContextCompat.getDrawable(
+                requireContext(),
+                R.drawable.question_option
+            )
+            op.typeface=Typeface.DEFAULT_BOLD
+        }
     }
 
 }
