@@ -65,4 +65,64 @@
         android:background="@drawable/question_option"
         android:id="@+id/option1"/>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/option_2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/question_option"
+        android:id="@+id/option2"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/option_3"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/question_option"
+        android:id="@+id/option3"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/option_4"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/question_option"
+        android:id="@+id/option4"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/option4"
+        app:layout_constraintEnd_toEndOf="parent"
+        radi
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/submitBtn"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
