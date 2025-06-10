@@ -119,7 +119,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/option4"
         app:layout_constraintEnd_toEndOf="parent"
-        radi
         android:layout_marginHorizontal="17dp"
         android:layout_marginTop="10dp"
         android:id="@+id/submitBtn"/>
