@@ -10,10 +10,10 @@ import com.example.quizapp.databinding.FragmentQuestionBinding
 
 class QuestionFragment : Fragment() {
     private lateinit var binding: FragmentQuestionBinding
-    val name: String? = null
+    private var name: String? = null
     val score:Int = 0
     val result = ResultFragment()
-    val bundle = Bundle()
+    private val bundle = Bundle()
     var currentPosition:Int = 1
     var selectedOption:Int = 0
     var questionList: ArrayList<QuestionData>? = null
@@ -24,6 +24,17 @@ class QuestionFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentQuestionBinding.inflate(inflater,container,false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        //get name from the HomeFragment
+        arguments.let{
+            name  = it?.getString("name")
+        }
+        bundle.putString("name",name)
+        questionList = SetData.getQuestion()
+
     }
 
 }
