@@ -1,11 +1,16 @@
 package com.example.quizapp
 
+import android.graphics.Color
+import android.graphics.Typeface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.example.quizapp.databinding.FragmentQuestionBinding
+import androidx.core.graphics.toColorInt
 
 
 class QuestionFragment : Fragment() {
@@ -16,7 +21,7 @@ class QuestionFragment : Fragment() {
     private val bundle = Bundle()
     var currentPosition:Int = 1
     var selectedOption:Int = 0
-    var questionList: ArrayList<QuestionData>? = null
+    private var questionList: ArrayList<QuestionData>? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,7 +39,27 @@ class QuestionFragment : Fragment() {
         }
         bundle.putString("name",name)
         questionList = SetData.getQuestion()
+        setQuestion()
+        binding.option1.setOnClickListener {
 
+        }
+
+    }
+
+    private fun setQuestion() {
+        TODO("Not yet implemented")
+    }
+
+    private fun selectedOptionStyle(view:TextView,opt:Int){
+        optionStyle()
+        selectedOption = opt
+        view.background=ContextCompat.getDrawable(requireContext(),R.drawable.selected_question_option)
+        view.typeface = Typeface.DEFAULT_BOLD
+        view.setTextColor("#000000".toColorInt())
+    }
+
+    private fun optionStyle() {
+        TODO("Not yet implemented")
     }
 
 }
