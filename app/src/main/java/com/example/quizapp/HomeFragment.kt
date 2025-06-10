@@ -33,7 +33,8 @@ class HomeFragment : Fragment() {
                 }
                 else->{
                     fragment.arguments = bundle
-                    requireActivity()
+                    requireActivity().supportFragmentManager.beginTransaction()
+                        .replace(R.id.HomeFrame,fragment).addToBackStack(null).commit()
                 }
             }
         }
