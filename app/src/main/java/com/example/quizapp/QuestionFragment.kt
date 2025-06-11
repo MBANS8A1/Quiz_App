@@ -16,7 +16,7 @@ import androidx.core.graphics.toColorInt
 class QuestionFragment : Fragment() {
     private lateinit var binding: FragmentQuestionBinding
     private var name: String? = null
-    val score:Int = 0
+    var score:Int = 0
     val result = ResultFragment()
     private val bundle = Bundle()
     var currentPosition:Int = 1
@@ -57,8 +57,15 @@ class QuestionFragment : Fragment() {
             if(selectedOption!=0){
                 val question = questionList!![currentPosition-1]
                 if(selectedOption!=question.correct_answer){
-                    binding.submitBtn.text="submit"
+                    binding.submitBtn.text="Submit"
                     setColour(selectedOption,R.drawable.wrong_question_option)
+                    setColour(question.correct_answer,R.drawable.correct_question_option)
+                }
+                else{
+                    setColour(selectedOption,R.drawable.correct_question_option)
+                    binding.submitBtn.text="Next"
+                    score++
+
                 }
             }
         }
