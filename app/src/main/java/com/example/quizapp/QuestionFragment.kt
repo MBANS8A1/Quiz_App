@@ -17,7 +17,7 @@ class QuestionFragment : Fragment() {
     private lateinit var binding: FragmentQuestionBinding
     private var name: String? = null
     var score:Int = 0
-    val result = ResultFragment()
+    val fragment = ResultFragment()
     private val bundle = Bundle()
     var currentPosition:Int = 1
     var selectedOption:Int = 0
@@ -76,9 +76,20 @@ class QuestionFragment : Fragment() {
             }
             else{
                 currentPosition++
+                when{ //update the questions
+                    currentPosition<=questionList!!.size->{
+                        setQuestion()
+                    }
+                    else->{
+                        bundle.putInt("score",score)
+                        fragment.arguments=bundle
+                        requireActivity().supportFragmentManager.beginTransaction()
+                            .replace(R.id.HomeFrame,fragment).addToBackStack(null)
+                            .commit()
+                    }
+                }
             }
         }
-
     }
 
     private fun setColour(opt:Int, color:Int) {
