@@ -41,7 +41,16 @@ class QuestionFragment : Fragment() {
         questionList = SetData.getQuestion()
         setQuestion()
         binding.option1.setOnClickListener {
-
+            selectedOptionStyle(binding.option1,1)
+        }
+        binding.option2.setOnClickListener {
+            selectedOptionStyle(binding.option2,2)
+        }
+        binding.option3.setOnClickListener {
+            selectedOptionStyle(binding.option3,3)
+        }
+        binding.option4.setOnClickListener {
+            selectedOptionStyle(binding.option4,4)
         }
 
     }
