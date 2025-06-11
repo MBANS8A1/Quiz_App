@@ -53,6 +53,20 @@ class QuestionFragment : Fragment() {
             selectedOptionStyle(binding.option4,4)
         }
 
+        binding.submitBtn.setOnClickListener {
+            if(selectedOption!=0){
+                val question = questionList!![currentPosition-1]
+                if(selectedOption!=question.correct_answer){
+                    binding.submitBtn.text="submit"
+                    setColour()
+                }
+            }
+        }
+
+    }
+
+    private fun setColour() {
+        TODO("Not yet implemented")
     }
 
     private fun setQuestion() {
