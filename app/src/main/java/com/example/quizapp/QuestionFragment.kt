@@ -67,6 +67,15 @@ class QuestionFragment : Fragment() {
                     score++
 
                 }
+                if(currentPosition == questionList!!.size){
+                    binding.submitBtn.text="Finish"
+                }
+                else{
+                    binding.submitBtn.text="Next"
+                }
+            }
+            else{
+                currentPosition++
             }
         }
 
