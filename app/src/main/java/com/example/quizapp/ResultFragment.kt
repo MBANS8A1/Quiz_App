@@ -23,5 +23,14 @@ class ResultFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        arguments?.let{
+            name = it.getString("name")
+            score = it.getInt("score")
+        }
+        binding.congTV.text=name
+        binding.scoreObtainedTV.text=score.toString()
+        binding.finishBtn.setOnClickListener {
+            requireActivity().finish()
+        }
     }
 }
