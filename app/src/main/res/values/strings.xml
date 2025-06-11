@@ -13,4 +13,6 @@
     <string name="option_3">option 3</string>
     <string name="option_4">option 4</string>
     <string name="congratulation_name">Congratulation Name</string>
+    <string name="your_score">Your score</string>
+    <string name="finish">Finish</string>
 </resources>

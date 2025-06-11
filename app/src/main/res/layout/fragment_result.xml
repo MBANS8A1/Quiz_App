@@ -25,4 +25,41 @@
         android:textStyle="bold"
         android:gravity="center"/>
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/congTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:text="@string/your_score"
+        android:id="@+id/scoreTV"
+        android:layout_marginTop="10dp"/>
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoreTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text=""
+        android:id="@+id/scoreObtainedTV"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scoreObtainedTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/finish"
+        android:id="@+id/finishBtn"
+        android:background="@color/blue"
+        android:textColor="@color/white"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
