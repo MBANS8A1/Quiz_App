@@ -57,7 +57,7 @@ class QuestionFragment : Fragment() {
             if(selectedOption!=0){
                 val question = questionList!![currentPosition-1]
                 if(selectedOption!=question.correct_answer){
-                    binding.submitBtn.text="Submit"
+                    binding.submitBtn.text="submit"
                     setColour(selectedOption,R.drawable.wrong_question_option)
                     setColour(question.correct_answer,R.drawable.correct_question_option)
                 }
@@ -89,22 +89,23 @@ class QuestionFragment : Fragment() {
                     }
                 }
             }
+            selectedOption = 0
         }
     }
 
-    private fun setColour(opt:Int, color:Int) {
+    private fun setColour(opt:Int, colour:Int) {
         when(opt){
             1->{
-                binding.option1.background = ContextCompat.getDrawable(requireContext(),color)
+                binding.option1.background = ContextCompat.getDrawable(requireContext(),colour)
             }
             2->{
-                binding.option2.background = ContextCompat.getDrawable(requireContext(),color)
+                binding.option2.background = ContextCompat.getDrawable(requireContext(),colour)
             }
             3->{
-                binding.option3.background = ContextCompat.getDrawable(requireContext(),color)
+                binding.option3.background = ContextCompat.getDrawable(requireContext(),colour)
             }
             4->{
-                binding.option4.background = ContextCompat.getDrawable(requireContext(),color)
+                binding.option4.background = ContextCompat.getDrawable(requireContext(),colour)
             }
         }
     }

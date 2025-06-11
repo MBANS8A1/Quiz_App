@@ -24,6 +24,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.btn.setOnClickListener {
             val fragment = QuestionFragment()
+            bundle = Bundle()
             bundle.apply {
                 putString("name",binding.nameET.text.toString())
             }
