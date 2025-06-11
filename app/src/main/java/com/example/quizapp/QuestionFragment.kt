@@ -47,7 +47,17 @@ class QuestionFragment : Fragment() {
     }
 
     private fun setQuestion() {
-        TODO("Not yet implemented")
+        val question = questionList!![currentPosition-1] //gets to zeroeth position
+        optionStyle()
+        binding.progressBar.progress =currentPosition
+        binding.progressBar.max = questionList!!.size
+        binding.progressText.text = "${currentPosition}/${questionList!!.size}"
+        binding.questionTV.text = question.question
+        binding.option1.text=question.option_one
+        binding.option2.text=question.option_two
+        binding.option3.text=question.option_three
+        binding.option4.text=question.option_four
+
     }
 
     private fun selectedOptionStyle(view:TextView,opt:Int){
