@@ -58,15 +58,28 @@ class QuestionFragment : Fragment() {
                 val question = questionList!![currentPosition-1]
                 if(selectedOption!=question.correct_answer){
                     binding.submitBtn.text="submit"
-                    setColour()
+                    setColour(selectedOption,R.drawable.wrong_question_option)
                 }
             }
         }
 
     }
 
-    private fun setColour() {
-        TODO("Not yet implemented")
+    private fun setColour(opt:Int, color:Int) {
+        when(opt){
+            1->{
+                binding.option1.background = ContextCompat.getDrawable(requireContext(),color)
+            }
+            2->{
+                binding.option2.background = ContextCompat.getDrawable(requireContext(),color)
+            }
+            3->{
+                binding.option3.background = ContextCompat.getDrawable(requireContext(),color)
+            }
+            4->{
+                binding.option4.background = ContextCompat.getDrawable(requireContext(),color)
+            }
+        }
     }
 
     private fun setQuestion() {
