@@ -1,6 +1,7 @@
+//QuestionFragment
+
 package com.example.quizapp
 
-import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
