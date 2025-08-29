@@ -21,6 +21,7 @@ class QuestionFragment : Fragment() {
     private val bundle = Bundle()
     var currentPosition:Int = 1
     var selectedOption:Int = 0
+    var questionListSize: Int = 0
     private var questionList: ArrayList<QuestionData>? = null
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,6 +40,8 @@ class QuestionFragment : Fragment() {
         }
         bundle.putString("name",name)
         questionList = SetData.getQuestion()
+        questionListSize = questionList!!.size //added
+        bundle.putInt("total",questionListSize) //added
         setQuestion()
         binding.option1.setOnClickListener {
             selectedOptionStyle(binding.option1,1)
