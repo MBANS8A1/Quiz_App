@@ -10,6 +10,11 @@ The user will start by inputting their name on the home screen and then clicking
 
 1.Home Screen (HomeFragment)
 
-  * You will be presented with a welcome screen where you will be required to input your name. You will not not be able to click on the "Next" button until you enter a name. If you do not enter a name and try to click "Next", you will receive an error warning stating you should enter your name first.
+  * You will be presented with a welcome screen where you will be required to input your name. You will not not be able to click on the "Next" button until you enter a name. If you do not enter a name and try to click "Next", you will receive an error warning stating you should enter your name first. The name entered is passed via the Bundle to the next fragment (QuestionFragment).
+    //Area for image
+
+2. Question Screen(s)
+
+  * You will be presented with a question in bold with a progress bar below indicating how many questions are remaining. Read the question and choose the option you think is the correct answer. When you touch an option it will be coloured with a blue outline. If the option is correct when you click the "Next" button it will be coloured solid green; if the option is wrong it will be coloured a solid red. Once the wrong and correct answers have been highlighted, click the "Next" button to move on. Your scoring will be collected and passed again via a Bundle obejct to where it will be retrieved at the Result Screen
 
 
