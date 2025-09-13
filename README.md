@@ -26,7 +26,7 @@ The user will start by inputting their name on the home screen and then clicking
 
    3. Result Screen
 
-   * When you have answered all the questions, youR score will be displayed (along with your name) and you will get a message stating whether your score is **poor**, **average** or **really good**. Also, there will be a "Finish" button, which will allow you to exit the application. The score is passed to the Result Screen via a Bundle object from the QuestionFragment.
+   * When you have answered all the questions, your score will be displayed (along with your name) and you will get a message stating whether your score is **poor**, **average** or **really good**. Also, there will be a "Finish" button, which will allow you to exit the application. The score is passed to the Result Screen via a Bundle object from the QuestionFragment.
      //Area for image
 
 
