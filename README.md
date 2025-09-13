@@ -15,8 +15,14 @@ The user will start by inputting their name on the home screen and then clicking
 
    2. Question Screen(s)
 
-   * You will be presented with a question in bold with a progress bar below indicating how many questions are remaining. Read the question and choose the option you think is the correct answer. When you touch an option it will be coloured with a blue outline. If the option is correct when you click the "Next" button it will be coloured solid green; if the option is wrong it will be coloured a solid red. Once the wrong and correct answers have been highlighted, click the "Next" button to move on. Your scoring will be collected and passed again via a Bundle obejct to where it will be retrieved at the Result Screen
-    //Area for images
+   * You will be presented with a question in bold with a progress bar below indicating how many questions are remaining. Read the question and choose the option you think is the correct answer. When you touch an option it will be coloured with a blue outline. If the option is correct when you click the "Next" button, it will be coloured solid green; if the option is wrong it will be coloured a solid red. Once the wrong and correct answers have been highlighted, click the "Next" button to move on. Your scoring will be collected and passed again via a Bundle obejct to where it will be retrieved at the Result Screen
+    //Area for selected answer
+
+
+    //Area for correct answer
+
+
+    //Area for wrong answer
 
    3. Result Screen
 
