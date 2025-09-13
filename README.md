@@ -10,7 +10,7 @@ The user will start by inputting their name on the home screen and then clicking
 
    1. Home Screen (HomeFragment)
 
-   * You will be presented with a welcome screen where you will be required to input your name. You will not not be able to click on the "Next" button until you enter a name. If you do not enter a name and try to click "Next", you will receive an error warning stating you should enter your name first. The name entered is passed via the Bundle to the next fragment (QuestionFragment).
+   * You will be presented with a welcome screen where you will be required to input your name. You will not be able to click on the "Next" button until you enter a name. If you do not enter a name and try to click "Next", you will receive an error warning stating you should enter your name first. The name entered is passed via the Bundle to the next fragment (QuestionFragment).
     //Area for image
 
    2. Question Screen(s)
