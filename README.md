@@ -33,6 +33,8 @@ The user will start by inputting their name on the home screen and then clicking
    3. Result Screen
 
    * When you have answered all the questions, your score will be displayed (along with your name) and you will get a message stating whether your score is **poor**, **average** or **really good**. Also, there will be a "Finish" button, which will allow you to exit the application. The score is passed to the Result Screen via a Bundle object from the QuestionFragment.
-     //Area for image
+
+ <img src="https://github.com/MBANS8A1/Quiz_App/blob/5494a53172b31b75439e6090737c6f7df80170e3/app/src/main/res/drawable/quiz_image6.png" alt="Result screen" width="250" height="490">
+
 
 
