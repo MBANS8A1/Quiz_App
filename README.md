@@ -14,6 +14,9 @@ The user will start by inputting their name on the home screen and then clicking
 
  <img src="https://github.com/MBANS8A1/Quiz_App/blob/5494a53172b31b75439e6090737c6f7df80170e3/app/src/main/res/drawable/quiz_image1.png" alt="Error home page" width="250" height="490">
 
+
+ <img src="https://github.com/MBANS8A1/Quiz_App/blob/5494a53172b31b75439e6090737c6f7df80170e3/app/src/main/res/drawable/quiz_image2.png" alt="Home page with name" width="250" height="490">
+
    2. Question Screen(s)
 
    * You will be presented with a question in bold with a progress bar below indicating how many questions are remaining. Read the question and choose the option you think is the correct answer. When you touch an option it will be coloured with a blue outline. If the option is correct when you click the "Next" button, it will be coloured solid green; if the option is wrong it will be coloured a solid red. Once the wrong and correct answers have been highlighted, click the "Next" button to move on. Your scoring will be collected and passed again via a Bundle obejct to where it will be retrieved at the Result Screen
