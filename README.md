@@ -12,7 +12,7 @@ The user will start by inputting their name on the home screen and then clicking
 
    * You will be presented with a welcome screen where you will be required to input your name. You will not be able to click on the "Next" button until you enter a name. If you do not enter a name and try to click "Next", you will receive an error warning stating you should enter your name first. The name entered is passed via the Bundle to the next fragment (QuestionFragment).
 
-![Home screen error image](res/drawable/quiz_image1.jpg)
+ <img src="https://github.com/MBANS8A1/Quiz_App/blob/5494a53172b31b75439e6090737c6f7df80170e3/app/src/main/res/drawable/quiz_image1.png" alt="Error home page" width="250" height="490">
 
    2. Question Screen(s)
 
